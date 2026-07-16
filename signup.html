@@ -12,7 +12,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
-<body class="min-h-screen overflow-x-hidden">
+<body class="h-screen overflow-hidden">
 
     <!-- Background -->
     <div class="fixed inset-0 -z-10">
@@ -23,227 +23,169 @@
     </div>
 
     <!-- Logo -->
-    <div class="absolute top-8 left-8">
+    <div class="absolute top-4 left-6 sm:top-6 sm:left-8">
         <a href="index.html">
-            <h1 class="text-3xl font-bold text-white">
+            <h1 class="text-2xl sm:text-3xl font-bold text-white">
                 KS <span class="text-[#D4AF37]">Estate</span>
             </h1>
         </a>
     </div>
 
     <!-- Signup Card -->
-    <section class="flex items-center justify-center min-h-screen py-10 px-5">
+    <section class="flex items-center justify-center h-screen px-4 py-4">
 
         <div
-            class="w-full max-w-lg bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl shadow-2xl p-8">
+           class="w-full max-w-4xl max-h-full overflow-y-auto bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl shadow-2xl p-5 sm:p-8">
 
-            <div class="text-center mb-8">
+            <div class="text-center mb-5">
 
                 <div
-                    class="w-20 h-20 rounded-full bg-[#D4AF37] mx-auto flex items-center justify-center mb-5">
+                    class="w-11 h-11 rounded-full bg-[#D4AF37] mx-auto flex items-center justify-center mb-2">
 
-                    <i class="fa-solid fa-user-plus text-3xl text-[#0F172A]"></i>
+                    <i class="fa-solid fa-user-plus text-lg text-[#0F172A]"></i>
 
                 </div>
 
-                <h2 class="text-4xl font-bold text-white">
+                <h2 class="text-2xl font-bold text-white">
                     Create Account
                 </h2>
 
-                <p class="text-gray-300 mt-2">
+                <p class="text-gray-300 mt-1 text-sm">
                     Join KS Estate Today
                 </p>
 
             </div>
 
-            <form class="space-y-5">
+            <form class="space-y-4">
 
-                <!-- Name -->
+                <!-- Row 1: Name + Email -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
 
-                <div>
+                    <div>
+                        <label class="block text-white mb-1 text-sm">
+                            Full Name
+                        </label>
+                        <div class="relative">
+                            <i class="fa-solid fa-user absolute left-4 top-1/2 -translate-y-1/2 text-[#D4AF37] text-sm"></i>
+                            <input
+                                type="text"
+                                placeholder="Enter your full name"
+                                class="w-full bg-white/10 border border-white/20 rounded-xl py-2 pl-11 pr-4 text-white placeholder-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-[#D4AF37]">
+                        </div>
+                    </div>
 
-                    <label class="block text-white mb-2">
-                        Full Name
-                    </label>
-
-                    <div class="relative">
-
-                        <i
-                            class="fa-solid fa-user absolute left-4 top-1/2 -translate-y-1/2 text-[#D4AF37]"></i>
-
-                        <input
-                            type="text"
-                            placeholder="Enter your full name"
-                            class="w-full bg-white/10 border border-white/20 rounded-xl py-3 pl-12 pr-4 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[#D4AF37]">
-
+                    <div>
+                        <label class="block text-white mb-1 text-sm">
+                            Email
+                        </label>
+                        <div class="relative">
+                            <i class="fa-solid fa-envelope absolute left-4 top-1/2 -translate-y-1/2 text-[#D4AF37] text-sm"></i>
+                            <input
+                                type="email"
+                                placeholder="Enter your email"
+                                class="w-full bg-white/10 border border-white/20 rounded-xl py-2 pl-11 pr-4 text-white placeholder-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-[#D4AF37]">
+                        </div>
                     </div>
 
                 </div>
 
-                <!-- Email -->
+                <!-- Row 2: Phone + Terms -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
 
-                <div>
+                    <div>
+                        <label class="block text-white mb-1 text-sm">
+                            Phone Number
+                        </label>
+                        <div class="relative">
+                            <i class="fa-solid fa-phone absolute left-4 top-1/2 -translate-y-1/2 text-[#D4AF37] text-sm"></i>
+                            <input
+                                type="tel"
+                                placeholder="Enter phone number"
+                                class="w-full bg-white/10 border border-white/20 rounded-xl py-2 pl-11 pr-4 text-white placeholder-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-[#D4AF37]">
+                        </div>
+                    </div>
 
-                    <label class="block text-white mb-2">
-                        Email
-                    </label>
-
-                    <div class="relative">
-
-                        <i
-                            class="fa-solid fa-envelope absolute left-4 top-1/2 -translate-y-1/2 text-[#D4AF37]"></i>
-
-                        <input
-                            type="email"
-                            placeholder="Enter your email"
-                            class="w-full bg-white/10 border border-white/20 rounded-xl py-3 pl-12 pr-4 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[#D4AF37]">
-
+                    <div class="flex items-end pb-2">
+                        <label class="flex items-start gap-2 text-gray-300 text-xs sm:text-sm">
+                            <input type="checkbox" class="accent-[#D4AF37] mt-0.5">
+                            <span>
+                                I agree to the
+                                <a href="#" class="text-[#D4AF37] hover:underline">
+                                    Terms & Conditions
+                                </a>
+                            </span>
+                        </label>
                     </div>
 
                 </div>
 
-                <!-- Phone -->
+                <!-- Row 3: Password + Confirm Password -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
 
-                <div>
+                    <div>
+                        <label class="block text-white mb-1 text-sm">
+                            Password
+                        </label>
+                        <div class="relative">
+                            <i class="fa-solid fa-lock absolute left-4 top-1/2 -translate-y-1/2 text-[#D4AF37] text-sm"></i>
+                            <input
+                                id="password"
+                                type="password"
+                                placeholder="Create Password"
+                                class="w-full bg-white/10 border border-white/20 rounded-xl py-2 pl-11 pr-11 text-white placeholder-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-[#D4AF37]">
+                            <button
+                                type="button"
+                                id="togglePassword"
+                                class="absolute right-4 top-1/2 -translate-y-1/2 text-[#D4AF37] text-sm">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
 
-                    <label class="block text-white mb-2">
-                        Phone Number
-                    </label>
-
-                    <div class="relative">
-
-                        <i
-                            class="fa-solid fa-phone absolute left-4 top-1/2 -translate-y-1/2 text-[#D4AF37]"></i>
-
-                        <input
-                            type="tel"
-                            placeholder="Enter phone number"
-                            class="w-full bg-white/10 border border-white/20 rounded-xl py-3 pl-12 pr-4 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[#D4AF37]">
-
+                    <div>
+                        <label class="block text-white mb-1 text-sm">
+                            Confirm Password
+                        </label>
+                        <div class="relative">
+                            <i class="fa-solid fa-lock absolute left-4 top-1/2 -translate-y-1/2 text-[#D4AF37] text-sm"></i>
+                            <input
+                                id="confirmPassword"
+                                type="password"
+                                placeholder="Confirm Password"
+                                class="w-full bg-white/10 border border-white/20 rounded-xl py-2 pl-11 pr-11 text-white placeholder-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-[#D4AF37]">
+                            <button
+                                type="button"
+                                id="toggleConfirm"
+                                class="absolute right-4 top-1/2 -translate-y-1/2 text-[#D4AF37] text-sm">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                        </div>
                     </div>
 
                 </div>
 
-                <!-- Password -->
+                <!-- Row 4: Buttons side by side -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-1">
 
-                <div>
+                    <button
+                        class="w-full bg-[#D4AF37] text-[#0F172A] py-2.5 rounded-full font-bold text-base hover:bg-yellow-500 hover:scale-105 transition duration-300">
+                        Create Account
+                    </button>
 
-                    <label class="block text-white mb-2">
-                        Password
-                    </label>
-
-                    <div class="relative">
-
-                        <i
-                            class="fa-solid fa-lock absolute left-4 top-1/2 -translate-y-1/2 text-[#D4AF37]"></i>
-
-                        <input
-                            id="password"
-                            type="password"
-                            placeholder="Create Password"
-                            class="w-full bg-white/10 border border-white/20 rounded-xl py-3 pl-12 pr-12 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[#D4AF37]">
-
-                        <button
-                            type="button"
-                            id="togglePassword"
-                            class="absolute right-4 top-1/2 -translate-y-1/2 text-[#D4AF37]">
-
-                            <i class="fa-solid fa-eye"></i>
-
-                        </button>
-
-                    </div>
+                    <button
+                        type="button"
+                        class="w-full border border-white/20 rounded-full py-2.5 text-white text-sm hover:bg-white hover:text-black transition">
+                        <i class="fab fa-google text-red-500 mr-2"></i>
+                        Sign up with Google
+                    </button>
 
                 </div>
-
-                <!-- Confirm Password -->
-
-                <div>
-
-                    <label class="block text-white mb-2">
-                        Confirm Password
-                    </label>
-
-                    <div class="relative">
-
-                        <i
-                            class="fa-solid fa-lock absolute left-4 top-1/2 -translate-y-1/2 text-[#D4AF37]"></i>
-
-                        <input
-                            id="confirmPassword"
-                            type="password"
-                            placeholder="Confirm Password"
-                            class="w-full bg-white/10 border border-white/20 rounded-xl py-3 pl-12 pr-12 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[#D4AF37]">
-
-                        <button
-                            type="button"
-                            id="toggleConfirm"
-                            class="absolute right-4 top-1/2 -translate-y-1/2 text-[#D4AF37]">
-
-                            <i class="fa-solid fa-eye"></i>
-
-                        </button>
-
-                    </div>
-
-                </div>
-
-                <!-- Terms -->
-
-                <label class="flex items-start gap-3 text-gray-300">
-
-                    <input
-                        type="checkbox"
-                        class="accent-[#D4AF37] mt-1">
-
-                    <span>
-                        I agree to the
-                        <a href="#" class="text-[#D4AF37] hover:underline">
-                            Terms & Conditions
-                        </a>
-                    </span>
-
-                </label>
-
-                <!-- Button -->
-
-                <button
-                    class="w-full bg-[#D4AF37] text-[#0F172A] py-3 rounded-full font-bold text-lg hover:bg-yellow-500 hover:scale-105 transition duration-300">
-
-                    Create Account
-
-                </button>
 
             </form>
 
-            <!-- Divider -->
-
-            <div class="flex items-center my-8">
-
-                <div class="flex-1 border-t border-white/20"></div>
-
-                <span class="px-4 text-gray-300">
-                    OR
-                </span>
-
-                <div class="flex-1 border-t border-white/20"></div>
-
-            </div>
-
-            <!-- Google -->
-
-            <button
-                class="w-full border border-white/20 rounded-full py-3 text-white hover:bg-white hover:text-black transition">
-
-                <i class="fab fa-google text-red-500 mr-2"></i>
-
-                Sign up with Google
-
-            </button>
-
             <!-- Login -->
 
-            <p class="text-center text-gray-300 mt-8">
+            <p class="text-center text-gray-300 mt-4 text-sm">
 
                 Already have an account?
 

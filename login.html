@@ -12,19 +12,19 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
-<body class="relative min-h-screen overflow-x-hidden">
+<body class="relative h-screen overflow-hidden">
 
-   
+    <!-- Background -->
     <div class="absolute inset-0">
         <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600"
-            class="w-full h-full object-cover">
+            class="w-full h-full object-cover" alt="">
     </div>
 
-   
+    <!-- Overlay -->
     <div class="absolute inset-0 bg-[#0F172A]/70 backdrop-blur-sm"></div>
 
-  
-    <div class="absolute top-8 left-10 z-20">
+    <!-- Logo -->
+    <div class="absolute top-6 left-8 z-20">
         <a href="index.html">
             <h1 class="text-3xl font-bold text-white">
                 KS <span class="text-[#D4AF37]">Estate</span>
@@ -32,24 +32,23 @@
         </a>
     </div>
 
-  
-    <section class="relative z-10 flex items-center justify-center min-h-screen py-10 px-5">
+    <!-- Login Card -->
+    <section class="relative z-10 flex items-center justify-center h-screen px-5">
 
         <div
-            class="w-full max-w-md rounded-3xl bg-white/10 backdrop-blur-xl border border-white/20 shadow-2xl p-8">
+            class="w-full max-w-lg rounded-3xl bg-white/10 backdrop-blur-xl border border-white/20 shadow-2xl px-8 py-6">
 
-         
-
+            <!-- User Icon -->
             <div class="text-center">
 
                 <div
-                    class="w-20 h-20 rounded-full bg-[#D4AF37] flex items-center justify-center mx-auto mb-5">
+                    class="w-16 h-16 rounded-full bg-[#D4AF37] flex items-center justify-center mx-auto mb-4">
 
-                    <i class="fa-solid fa-user text-3xl text-[#0F172A]"></i>
+                    <i class="fa-solid fa-user text-2xl text-[#0F172A]"></i>
 
                 </div>
 
-                <h2 class="text-4xl font-bold text-white">
+                <h2 class="text-3xl font-bold text-white">
                     Welcome Back
                 </h2>
 
@@ -59,10 +58,10 @@
 
             </div>
 
+            <!-- Form -->
+            <form class="mt-6 space-y-4">
 
-            <form class="mt-8 space-y-6">
-
-
+                <!-- Email -->
                 <div>
 
                     <label class="text-white font-medium block mb-2">
@@ -72,18 +71,17 @@
                     <div class="relative">
 
                         <i
-                            class="fa-solid fa-envelope absolute left-4 top-1/2 -translate-y-1/2 text-[#D4AF37]">
-                        </i>
+                            class="fa-solid fa-envelope absolute left-4 top-1/2 -translate-y-1/2 text-[#D4AF37]"></i>
 
                         <input type="email"
                             placeholder="Enter your email"
-                            class="w-full bg-white/10 border border-white/20 rounded-xl py-3 pl-12 pr-4 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[#D4AF37] focus:border-[#D4AF37]">
+                            class="w-full bg-white/10 border border-white/20 rounded-xl py-2.5 pl-12 pr-4 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[#D4AF37]">
 
                     </div>
 
                 </div>
 
-
+                <!-- Password -->
                 <div>
 
                     <label class="text-white font-medium block mb-2">
@@ -93,14 +91,13 @@
                     <div class="relative">
 
                         <i
-                            class="fa-solid fa-lock absolute left-4 top-1/2 -translate-y-1/2 text-[#D4AF37]">
-                        </i>
+                            class="fa-solid fa-lock absolute left-4 top-1/2 -translate-y-1/2 text-[#D4AF37]"></i>
 
                         <input
                             id="password"
                             type="password"
                             placeholder="Enter your password"
-                            class="w-full bg-white/10 border border-white/20 rounded-xl py-3 pl-12 pr-12 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[#D4AF37] focus:border-[#D4AF37]">
+                            class="w-full bg-white/10 border border-white/20 rounded-xl py-2.5 pl-12 pr-12 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-[#D4AF37]">
 
                         <button
                             type="button"
@@ -115,33 +112,26 @@
 
                 </div>
 
-             
-
+                <!-- Remember -->
                 <div class="flex justify-between items-center text-sm">
 
                     <label class="flex items-center gap-2 text-gray-300">
 
-                        <input
-                            type="checkbox"
-                            class="accent-[#D4AF37]">
+                        <input type="checkbox" class="accent-[#D4AF37]">
 
                         Remember Me
 
                     </label>
 
-                    <a href="#"
-                        class="text-[#D4AF37] hover:underline">
-
+                    <a href="#" class="text-[#D4AF37] hover:underline">
                         Forgot Password?
-
                     </a>
 
                 </div>
 
-           
-
+                <!-- Login -->
                 <button
-                    class="w-full bg-[#D4AF37] text-[#0F172A] py-3 rounded-full font-bold text-lg hover:bg-yellow-500 hover:scale-105 transition duration-300">
+                    class="w-full bg-[#D4AF37] text-[#0F172A] py-2.5 rounded-full font-bold text-lg hover:bg-yellow-500 hover:scale-105 transition duration-300">
 
                     Login
 
@@ -149,50 +139,47 @@
 
             </form>
 
-
-            <div class="flex items-center my-8">
+            <!-- Divider -->
+            <div class="flex items-center my-5">
 
                 <div class="flex-1 border-t border-white/20"></div>
 
                 <span class="px-4 text-gray-300 text-sm">
-
                     OR
-
                 </span>
 
                 <div class="flex-1 border-t border-white/20"></div>
 
             </div>
 
-           
-
-            <div class="grid grid-cols-3 gap-4">
+            <!-- Social Login -->
+            <div class="grid grid-cols-3 gap-3">
 
                 <button
-                    class="h-12 rounded-xl bg-white hover:bg-gray-100 transition">
+                    class="h-11 rounded-xl bg-white hover:bg-gray-100 transition">
 
-                    <i class="fab fa-google text-red-500 text-xl"></i>
+                    <i class="fab fa-google text-red-500 text-lg"></i>
 
                 </button>
 
                 <button
-                    class="h-12 rounded-xl bg-white hover:bg-gray-100 transition">
+                    class="h-11 rounded-xl bg-white hover:bg-gray-100 transition">
 
-                    <i class="fab fa-facebook-f text-blue-600 text-xl"></i>
+                    <i class="fab fa-facebook-f text-blue-600 text-lg"></i>
 
                 </button>
 
                 <button
-                    class="h-12 rounded-xl bg-white hover:bg-gray-100 transition">
+                    class="h-11 rounded-xl bg-white hover:bg-gray-100 transition">
 
-                    <i class="fab fa-apple text-black text-xl"></i>
+                    <i class="fab fa-apple text-black text-lg"></i>
 
                 </button>
 
             </div>
 
-
-            <p class="text-center text-gray-300 mt-8">
+            <!-- Signup -->
+            <p class="text-center text-gray-300 mt-5 text-sm">
 
                 Don't have an account?
 
