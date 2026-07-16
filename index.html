@@ -1,0 +1,768 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="/src/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <title>Real Estate</title>
+</head>
+
+<body class="bg-gray-100">
+    <header id="navbar"
+        class="fixed top-0 left-0 w-full z-50 bg-transparent backdrop-blur-xl border-b border-white/20 transition-all duration-500">
+        <div class="max-w-7xl mx-auto flex items-center justify-between px-8 py-4">
+
+            <!-- Logo -->
+            <a href="#" class="flex items-center">
+                <img src="/images/logo.png" alt="KS Real Estate Logo" class="h-14">
+            </a>
+
+            <!-- Nav -->
+            <nav>
+                <ul class="flex items-center space-x-10 font-semibold mr-8 text-md">
+                    <li>
+                        <a href="#parent3" class="nav-link relative transition duration-100 hover:text-yellow-400
+                    after:absolute after:left-0 after:-bottom-1
+                    after:w-0 after:h-0.5 after:bg-yellow-400
+                    after:transition-all hover:after:w-full">
+                            City
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#buy" class="nav-link relative transition duration-300 hover:text-yellow-400
+                    after:absolute after:left-0 after:-bottom-1
+                    after:w-0 after:h-0.5 after:bg-yellow-400
+                    after:transition-all hover:after:w-full">
+                            Buy
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav-link relative transition duration-300 hover:text-yellow-400
+                    after:absolute after:left-0 after:-bottom-1
+                    after:w-0 after:h-0.5 after:bg-yellow-400
+                    after:transition-all hover:after:w-full">
+                            Rent
+                        </a>
+                    </li>
+
+                    <!-- <li>
+                        <a href="#" class="nav-link relative transition duration-300 hover:text-yellow-400
+                    after:absolute after:left-0 after:-bottom-1
+                    after:w-0 after:h-0.5 after:bg-yellow-400
+                    after:transition-all hover:after:w-full">
+                            Sell
+                        </a>
+                    </li> -->
+
+                    <li>
+                        <a href="#properties" class="nav-link relative transition duration-300 hover:text-yellow-400
+                    after:absolute after:left-0 after:-bottom-1
+                    after:w-0 after:h-0.5 after:bg-yellow-400
+                    after:transition-all hover:after:w-full">
+                            Properties
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#aboutus" class="nav-link relative transition duration-300 hover:text-yellow-400
+                    after:absolute after:left-0 after:-bottom-1
+                    after:w-0 after:h-0.5 after:bg-yellow-400
+                    after:transition-all hover:after:w-full">
+                            About us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="nav-link relative transition duration-300 hover:text-yellow-400
+                    after:absolute after:left-0 after:-bottom-1
+                    after:w-0 after:h-0.5 after:bg-yellow-400
+                    after:transition-all hover:after:w-full">
+                            Download App
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/sell.html" class="border border-blue-400 text-blue-400 px-5 py-2 rounded-full
+                    hover:bg-blue-600 hover:text-white hover:border-blue-600 transition whitespace-nowrap">
+                            Post Property
+                            <span class="ml-2 bg-yellow-400 text-black text-xs px-2 py-0.5 rounded-full">
+                                FREE
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/login.html"><button class="login-btn">
+                                Login
+                            </button></a>
+                    </li>
+
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen overflow-hidden">
+        <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover">
+            <source src="images/7aa30fa347ccd9e25936b40716de3a5c_720w.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="absolute inset-0 bg-black/50"></div>
+
+        <div class="relative z-10 flex h-full items-center justify-center text-center text-white px-6">
+            <div>
+                <h1 class="text-5xl md:text-7xl font-bold leading-tight">
+                    Find Your Dream Home
+                </h1>
+
+                <p class="mt-4 text-xl text-gray-200">
+                    Buy • Sell • Rent Properties Across India
+                </p>
+
+                <!-- <div class="mt-8 flex items-center justify-center gap-4 flex-wrap">
+                    <button
+                        class="bg-yellow-400 cursor-pointer text-black px-8 py-3
+                        rounded-full hover:bg-yellow-500 transition font-semibold">
+                        Explore Properties
+                    </button>
+                    <button
+                        class="bg-white cursor-pointer text-blue-600 px-8 py-3
+                        rounded-full hover:bg-blue-500 hover:text-white transition font-semibold">
+                        Explore Cities
+                    </button>
+                </div> -->
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="parent">
+
+        <!-- Heading -->
+        <div class="heading">
+            <h1>Trusted By Leading Financial Institutions</h1>
+            <p>Associated with India's top banks and financial partners</p>
+        </div>
+
+        <!-- Card 1 -->
+        <div class="card">
+            <div class="circle">H</div>
+            <h3>HDFC Bank</h3>
+            <p>Home Loan Partner</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <div class="circle">I</div>
+            <h3>ICICI Bank</h3>
+            <p>Trusted Banking Services</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <div class="circle">S</div>
+            <h3>SBI</h3>
+            <p>India's Largest Public Bank</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+            <div class="circle">A</div>
+            <h3>Axis Bank</h3>
+            <p>Quick Home Loans</p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card">
+            <div class="circle">K</div>
+            <h3>Kotak Mahindra</h3>
+            <p>Premium Financial Services</p>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card">
+            <div class="circle">L</div>
+            <h3>LIC Housing</h3>
+            <p>Affordable Housing Finance</p>
+        </div>
+
+    </section>
+
+
+
+    <section class="parent2" id="buy">
+
+        <!-- Heading -->
+        <div class="heading2">
+            <h1>Featured Properties</h1>
+            <p>Discover our handpicked selection of premium luxury properties across India.</p>
+        </div>
+
+
+        <!-- Card 1 -->
+        <div class="card1">
+            <div class="image-box">
+                <img src="https://i.pinimg.com/736x/e0/de/d2/e0ded291b9000e743012ea111a933987.jpg" alt="Villa">
+
+            </div>
+
+            <div class="card-content">
+                <h2 class="price">₹1.25 Cr</h2>
+                <h3>Luxury Villa</h3>
+                <p class="location">📍 Chandigarh</p>
+
+                <div class="facilities">
+                    <span>🛏 4 Beds</span>
+                    <span>🛁 3 Baths</span>
+                    <span>🚗 Parking</span>
+                    <span>📐 2500 sqft</span>
+                </div>
+
+                <button class="book-btn">Book Visit</button>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card1">
+            <div class="image-box">
+                <img src="https://i.pinimg.com/1200x/cd/65/f1/cd65f11865a9d83734ea90541e678294.jpg" alt="Apartment">
+
+            </div>
+
+            <div class="card-content">
+                <h2 class="price">₹95 Lakh</h2>
+                <h3>Modern Apartment</h3>
+                <p class="location">📍 Mohali</p>
+
+                <div class="facilities">
+                    <span>🛏 3 Beds</span>
+                    <span>🛁 2 Baths</span>
+                    <span>🚗 Parking</span>
+                    <span>📐 1800 sqft</span>
+                </div>
+
+                <button class="book-btn">Book Visit</button>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card1">
+            <div class="image-box">
+                <img src="https://i.pinimg.com/1200x/64/a6/ba/64a6ba0421e58276173c23d56c0d8215.jpg" alt="House">
+
+            </div>
+
+            <div class="card-content">
+                <h2 class="price">₹2.10 Cr</h2>
+                <h3>Premium House</h3>
+                <p class="location">📍 Delhi</p>
+
+                <div class="facilities">
+                    <span>🛏 5 Beds</span>
+                    <span>🛁 4 Baths</span>
+                    <span>🚗 Garage</span>
+                    <span>📐 3200 sqft</span>
+                </div>
+
+                <button class="book-btn">Book Visit</button>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card1">
+            <div class="image-box">
+                <img src="https://i.pinimg.com/736x/88/01/3b/88013bdd1e541ea5ad304974d2bf6f14.jpg" alt="Penthouse">
+
+            </div>
+
+            <div class="card-content">
+                <h2 class="price">₹3.50 Cr</h2>
+                <h3>Luxury Penthouse</h3>
+                <p class="location">📍 Mumbai</p>
+
+                <div class="facilities">
+                    <span>🛏 4 Beds</span>
+                    <span>🛁 4 Baths</span>
+                    <span>🏊 Pool</span>
+                    <span>📐 4000 sqft</span>
+                </div>
+
+                <button class="book-btn">Book Visit</button>
+            </div>
+        </div>
+        <div class="card1">
+            <div class="image-box">
+                <img src="https://i.pinimg.com/736x/92/cc/79/92cc797b609a3d23585457bdc6135230.jpg" alt="Penthouse">
+
+            </div>
+
+            <div class="card-content">
+                <h2 class="price">₹3.50 Cr</h2>
+                <h3>Sea View Apartment</h3>
+                <p class="location">📍 Mumbai</p>
+
+                <div class="facilities">
+                    <span>🛏 4 Beds</span>
+                    <span>🛁 4 Baths</span>
+                    <span>🏊 Pool</span>
+                    <span>📐 4000 sqft</span>
+                </div>
+
+                <button class="book-btn">Book Visit</button>
+            </div>
+        </div>
+        <div class="card1">
+            <div class="image-box">
+                <img src="https://i.pinimg.com/736x/b7/a9/8a/b7a98a9bd2329835d176580482b2cfcb.jpg" alt="Penthouse">
+
+            </div>
+
+            <div class="card-content">
+                <h2 class="price">₹3.50 Cr</h2>
+                <h3>Designer Villa</h3>
+                <p class="location">📍 Mumbai</p>
+
+                <div class="facilities">
+                    <span>🛏 4 Beds</span>
+                    <span>🛁 4 Baths</span>
+                    <span>🏊 Pool</span>
+                    <span>📐 4000 sqft</span>
+                </div>
+
+                <button class="book-btn">Book Visit</button>
+            </div>
+        </div>
+        <div class="view-all">
+            <button class="view-all-pro">
+                View All Properties
+            </button>
+        </div>
+
+    </section>
+    <section class="parent3" id="parent3">
+        <!-- Heading -->
+        <div class="heading2">
+            <h1>Popular Cities</h1>
+            <p>Explore premium properties in India's most sought-after locations</p>
+        </div>
+
+        <!-- Card 1 -->
+        <div class="card2"
+            style="background-image: url('https://i.pinimg.com/736x/02/80/bf/0280bf54b3b144b43f397be496b28344.jpg');">
+            <div class="overlay"></div>
+            <div class="content">
+                <h2 class="city-name">Mumbai</h2>
+                <p class="city-count">1000+ Properties</p>
+                <button class="explore-button">Explore More</button>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card2"
+            style="background-image: url('https://i.pinimg.com/736x/8b/94/6c/8b946c6b3a6d452dbea16a0ac556aa4d.jpg');">
+            <div class="overlay"></div>
+            <div class="content">
+                <h2 class="city-name">Delhi</h2>
+                <p class="city-count">2000+ Properties</p>
+                <button class="explore-button">Explore More</button>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card2"
+            style="background-image: url('https://i.pinimg.com/1200x/63/17/ac/6317ac195f6138c748fa5097f5eeb628.jpg');">
+            <div class="overlay"></div>
+            <div class="content">
+                <h2 class="city-name">Bangalore</h2>
+                <p class="city-count">1500+ Properties</p>
+                <button class="explore-button">Explore More</button>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card2"
+            style="background-image: url('https://i.pinimg.com/736x/35/09/28/350928ff49b8a25e33d96d59078f9e44.jpg');">
+            <div class="overlay"></div>
+            <div class="content">
+                <h2 class="city-name">Kolkata</h2>
+                <p class="city-count">2500+ Properties</p>
+                <button class="explore-button">Explore More</button>
+            </div>
+        </div>
+        <div class="card2"
+            style="background-image: url('https://i.pinimg.com/1200x/c9/9a/d4/c99ad4132bbcc7728950773cfac57b85.jpg');">
+            <div class="overlay"></div>
+            <div class="content">
+                <h2 class="city-name">Hyderabad
+                </h2>
+                <p class="city-count">2000+ Properties</p>
+                <button class="explore-button">Explore More</button>
+            </div>
+        </div>
+        <div class="card2"
+            style="background-image: url('https://i.pinimg.com/736x/e2/8a/b0/e28ab0a9e473795b1c2f49cda8b09571.jpg');">
+            <div class="overlay"></div>
+            <div class="content">
+                <h2 class="city-name">Gurgoan</h2>
+                <p class="city-count">1500+ Properties</p>
+                <button class="explore-button">Explore More</button>
+            </div>
+        </div>
+
+        <!-- Add more cards as needed -->
+    </section>
+
+    <section class="parent" id="properties">
+
+        <!-- Heading -->
+        <div class="heading">
+            <h1>Property Categories</h1>
+            <p>Browse through our diverse collection of premium properties</p>
+        </div>
+
+        <!-- Card 1 -->
+        <div class="card">
+            <div class="circle">
+                <i class="fa-solid fa-building"></i>
+            </div>
+            <h3>Apartments</h3>
+            <button>
+                View All <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <div class="circle">
+                <i class="fa-solid fa-house"></i>
+            </div>
+            <h3>Villas</h3>
+            <button>
+                View All <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <div class="circle">
+                <i class="fa-solid fa-hotel"></i>
+            </div>
+            <h3>Penthouses</h3>
+            <button>
+                View All <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+            <div class="circle">
+                <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <h3>Commercial</h3>
+            <button>
+                View All <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+        <!-- Card 5 -->
+        <div class="card">
+            <div class="circle">
+                <i class="fa-solid fa-map-location-dot"></i>
+            </div>
+            <h3>Plots</h3>
+            <button>
+                View All <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card">
+            <div class="circle">
+                <i class="fa-solid fa-wheat-awn"></i>
+            </div>
+            <h3>Farmhouses</h3>
+            <button>
+                View All <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+
+    </section>
+    <section class="parent4">
+
+        <div class="heading4">
+            <h1>Why Choose Us</h1>
+            <p>Experience the difference with our premium real estate services and dedicated support</p>
+        </div>
+
+        <!-- Card 1 -->
+        <div class="card4" id="aboutus">
+            <i class="fa-solid fa-circle-check"></i>
+            <h3>Verified Properties</h3>
+            <p>All properties are thoroughly verified and inspected for authenticity and legal compliance.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card4">
+            <i class="fa-solid fa-tags"></i>
+            <h3>Best Price Guarantee</h3>
+            <p>Get the best deals with our price match guarantee and transparent pricing policy.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card4">
+            <i class="fa-solid fa-user-tie"></i>
+            <h3>Expert Agents</h3>
+            <p>Work with certified real estate professionals who understand your needs perfectly.</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card4">
+            <i class="fa-solid fa-headset"></i>
+            <h3>24/7 Support</h3>
+            <p>Round-the-clock customer support to assist you at every step of your journey.</p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card4">
+            <i class="fa-solid fa-scale-balanced"></i>
+            <h3>Legal Assistance</h3>
+            <p>Complete legal support and documentation assistance for hassle-free transactions.</p>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card4">
+            <i class="fa-solid fa-vr-cardboard"></i>
+            <h3>Virtual Tours</h3>
+            <p>Experience properties from anywhere with our immersive 360° virtual tours.</p>
+        </div>
+
+
+    </section>
+    <section class="faq-section">
+
+        <div class="faq-heading">
+            <h1>Frequently Asked Questions</h1>
+            <p>Find answers to common questions about our services and processes</p>
+        </div>
+
+        <div class="faq-container">
+
+            <!-- FAQ 1 -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>How do I search for properties on your platform?</span>
+
+                </div>
+
+                <div class="faq-answer">
+                    <p>
+                        Use our advanced search filters to browse properties by location,
+                        budget, property type, amenities, and more.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Are all properties verified?</span>
+
+                </div>
+
+                <div class="faq-answer">
+                    <p>
+                        Yes. Every property listed on our platform is verified for
+                        authenticity and legal compliance.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>What is the process to buy a property?</span>
+
+                </div>
+
+                <div class="faq-answer">
+                    <p>
+                        Select a property, schedule a visit, complete documentation,
+                        arrange financing if required, and finalize the registration.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Do you provide home loan assistance?</span>
+
+                </div>
+
+                <div class="faq-answer">
+                    <p>
+                        Yes. We work with leading banks and financial institutions to
+                        help you find the best home loan options.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FAQ 5 -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>How can I list my property for sale or rent?</span>
+
+                </div>
+
+                <div class="faq-answer">
+                    <p>
+                        Simply contact our team or use the "List Property" option on
+                        our website to submit your property details.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FAQ 6 -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>What are your service charges?</span>
+
+                </div>
+
+                <div class="faq-answer">
+                    <p>
+                        Our service charges vary depending on the property and service.
+                        Contact us for detailed pricing.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <footer class="bg-[#0F172A] text-black mt-24 font-sans shadow-inner">
+        <!-- Newsletter -->
+        <div
+            class="max-w-7xl mx-auto px-6 py-16 border-b border-gray-700 `bg-gradient-to-r` from-[#0F172A] via-[#1A2238] to-[#0F172A] rounded-t-xl">
+            <div class="text-center">
+                <h2 class="text-4xl md:text-5xl font-extrabold tracking-wide text-black mb-4">
+                    Subscribe to Our Newsletter
+                </h2>
+                <p class="text-yellow-400  text-lg mb-8 max-w-2xl mx-auto">
+                    Get the latest property listings and real estate news directly in your inbox.
+                </p>
+                <div class="mt-8 flex flex-col md:flex-row justify-center gap-4">
+                    <input type="email" placeholder="Enter your email address"
+                        class="w-full `md:w-112.5` px-6 py-4 rounded-full bg-white text-gray-800 outline-none border-2 border-transparent focus:border-yellow-400 transition focus:outline-none focus:ring-2 focus:ring-yellow-300">
+                    <button
+                        class="bg-yellow-400 hover:bg-yellow-500 transition px-8 py-4 rounded-full font-semibold text-black shadow-md">
+                        Subscribe
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main footer with 2 side-by-side grids -->
+        <div class="max-w-7xl mx-auto px-6 py-16 flex flex-wrap gap-8">
+            <!-- First grid -->
+            <div class="w-full md:w-1/2 grid grid-rows-2 gap-8">
+                <!-- Row 1 -->
+                <div class="col-span-1">
+                    <h2 class="text-4xl font-bold text-black mb-4 tracking-wide">
+                        KS<span class="text-yellow-400">Estate</span>
+                    </h2>
+                    <p class="leading-7 mb-6 text-gray-400 max-w-sm">
+                        Your trusted partner in finding luxury properties across India. With over 15 years of
+                        experience, we make your dream home a reality.
+                    </p>
+                    <div class="flex gap-4 text-xl text-black">
+                        <a href="#" class="hover:text-yellow-400 transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="hover:text-yellow-400 transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="hover:text-yellow-400 transition"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="hover:text-yellow-400 transition"><i class="fab fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <!-- Row 2 -->
+                <div class="col-span-1">
+                    <h3 class="text-xl font-semibold mb-6 text-yellow-400 uppercase tracking-wide">
+                        Quick Links
+                    </h3>
+                    <ul class="space-y-4 text-black">
+                        <li><a href="#" class="hover:text-yellow-400 transition">Home</a></li>
+                        <li><a href="#" class="hover:text-yellow-400 transition">Buy</a></li>
+                        <li><a href="#" class="hover:text-yellow-400 transition">Rent</a></li>
+                        <li><a href="#" class="hover:text-yellow-400 transition">Sell</a></li>
+                        <li><a href="#" class="hover:text-yellow-400 transition">Our Agents</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Second grid -->
+            <div class="w-full md:w-1/2 grid grid-rows-2 gap-8">
+                <!-- Row 1 -->
+                <div class="col-span-1">
+                    <h3 class="text-xl font-semibol uppercase tracking-wide">
+                        Popular Cities
+                    </h3>
+                    <ul class="space-y-4  text-black">
+                        <li class="cursor-pointer hover:text-yellow-400 ">Mumbai</li>
+                        <li class="cursor-pointer hover:text-yellow-400 ">Delhi</li>
+                        <li class="cursor-pointer hover:text-yellow-400 ">Bangalore</li>
+                        <li class="cursor-pointer hover:text-yellow-400 ">Pune</li>
+                        <li class="cursor-pointer hover:text-yellow-400 ">Chennai</li>
+                    </ul>
+                    </ul>
+                </div>
+                <!-- Row 2 -->
+                <div class="col-span-1">
+                    <h3 class="text-xl font-semibold mb-6 text-yellow-400 uppercase tracking-wide">
+                        Contact Us
+                    </h3>
+                    <div class="space-y-5 text-gray-400">
+                        <p class="flex gap-3 items-start">
+                            <i class="fa-solid fa-location-dot text-yellow-400 mt-1"></i>
+                            3b2 Mohali,Punjab
+                        </p>
+                        <p class="flex gap-3 items-center">
+                            <i class="fa-solid fa-phone text-yellow-400"></i>
+                            +91 00000-00000
+                        </p>
+                        <p class="flex gap-3 items-center">
+                            <i class="fa-solid fa-envelope text-yellow-400"></i>
+                            Ksestate@gmail.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom footer -->
+        <div class="border-t border-gray-700 bg-[#0F172A]">
+            <div
+                class="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center gap-5 text-gray-500 text-sm">
+                <p>
+                    © 2026 KS Real Estate. All rights reserved.
+                </p>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-yellow-400 transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-yellow-400 transition">Terms of Service</a>
+                    <a href="#" class="hover:text-yellow-400 transition">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/src/main.js"></script>
+
+
+</body>
+
+</html>
